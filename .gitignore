@@ -1,0 +1,25 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.psess
+*.vsp
+
+# Logs
+*.log
+*.tlog
+*.log*
+
+# Visual Studio specific
+.vs/
+.vscode/
+*.ide.workspace
+
+# Package directories
+packages/
+*.nupkg
+
