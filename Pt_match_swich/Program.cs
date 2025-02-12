@@ -2,7 +2,7 @@
 
 //Value pattern
 
-string color = "g";
+/*string color = "g";
 
 var result= color switch 
 {
@@ -36,5 +36,21 @@ Console.WriteLine(CheckType(age));
 Console.WriteLine(CheckType(name));
 Console.WriteLine(CheckType(colors));
 Console.WriteLine(CheckType(numbers));
-Console.WriteLine(CheckType(salary));
-    
+Console.WriteLine(CheckType(salary));*/
+
+
+ //Relation Pattern
+
+    var numbers = new List<int>{1,2,4,-10,67,-2,34,0};
+
+    foreach(var num in numbers)
+    {
+        var res= num switch
+        {
+            > 0 => $"{num} is positive",
+            0 => $"{num} is zero",
+            < 0 => $"{num} is negative",
+            
+        };
+        Console.WriteLine(res);
+    }
