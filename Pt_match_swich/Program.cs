@@ -41,7 +41,7 @@ Console.WriteLine(CheckType(salary));*/
 
  //Relation Pattern
 
-    var numbers = new List<int>{1,2,4,-10,67,-2,34,0};
+    /*var numbers = new List<int>{1,2,4,-10,67,-2,34,0};
 
     foreach(var num in numbers)
     {
@@ -53,4 +53,20 @@ Console.WriteLine(CheckType(salary));*/
             
         };
         Console.WriteLine(res);
-    }
+    }*/
+
+    //Logical pattern
+
+    string CheckGrade(int m) => m switch
+    {
+        <35 => "F",
+        <50 => "S",
+        <65 => "C",
+        <75 => "B",
+        _ => "A"
+    };
+
+    Console.WriteLine(CheckGrade(30));
+    Console.WriteLine(CheckGrade(45));
+    Console.WriteLine(CheckGrade(60));
+    Console.WriteLine(CheckGrade(80));
