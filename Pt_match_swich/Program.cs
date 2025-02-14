@@ -57,7 +57,7 @@ Console.WriteLine(CheckType(salary));*/
 
     //Logical pattern
 
-    string CheckGrade(int m) => m switch
+   /* string CheckGrade(int m) => m switch
     {
         <35 => "F",
         <50 => "S",
@@ -70,7 +70,30 @@ Console.WriteLine(CheckType(salary));*/
     Console.WriteLine(CheckGrade(45));
     Console.WriteLine(CheckGrade(60));
     Console.WriteLine(CheckGrade(80));
-
+*/
     //When guard
 
+    var people= new List <person>
+    {
+        new person("John","Doe",10),
+        new person( "Smith","Samuel",17),
+        new person( "David","Warner",40),
+        new person("Tom","Cruse",50),
+        new person( "Jerry","Silva",60),
+    };
+
+    string CheckPerson(person p )
+    {
+        return p switch
+        {
+            {Age: var age} when age < 18 => "Minor",
+            _ => "Adult"
+        };
+    }
+
+    foreach(var pe in people)
+    {
+    Console.WriteLine(CheckPerson(pe));
+    }
+record person(string FirstName, string LastName, int Age);
     
