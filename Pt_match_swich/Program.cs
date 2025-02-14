@@ -70,3 +70,7 @@ Console.WriteLine(CheckType(salary));*/
     Console.WriteLine(CheckGrade(45));
     Console.WriteLine(CheckGrade(60));
     Console.WriteLine(CheckGrade(80));
+
+    //When guard
+
+    
